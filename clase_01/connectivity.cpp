@@ -32,7 +32,7 @@ int main() {
 }
 
 bool EstanConectados(int conexiones[],int p, int q) {
-	return p == q || conexiones[p] == conexiones[q];
+	return conexiones[p] == conexiones[q];
 }
 
 void Conectar(int conexiones[],int p, int q) {
