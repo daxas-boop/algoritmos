@@ -57,7 +57,7 @@ void RemplazarTexto(char texto[], char subtexto_buscado[], char subtexto_remplaz
 
 void CopiarTexto(char texto_origen[], char texto_destino[]) {
 	int indice = 0;
-	while (texto_origen[indice] != '\0') {
+	while (texto_origen[indice] != '\0' || texto_destino[indice] != '\0') {
 		texto_destino[indice] = texto_origen[indice];
 		indice++;
 	}
